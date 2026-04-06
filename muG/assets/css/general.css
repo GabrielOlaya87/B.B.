@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    min-width: 1024px;
+}
+.nav{
+    background-color: #e7d29c;
+    align-items: center;
+    display: flex;
+    font-size: small;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+nav a {
+    color: black;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 22px;
+    /* margin-left: 55px; */
+    font-weight: bold;
+}
+
+.logo, .right-buttons {
+    min-width: 150px;
+}
+.logo {
+    padding: 8px;
+}
+
+.right-buttons {
+    display: flex;
+}
+.right-buttons button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.center {
+ width: 100%;
+ display: flex;
+}
+
+.nav-buttons {
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.cont-buscador{
+    display: flex;
+    align-items: center;
+    min-width: 50%;
+}
+
+.buscador {
+    position: relative;
+    width: 80%;
+}
+
+#buscador-input{
+    width: 100%;
+    border-radius: 18px;
+    padding: 10px 39px 10px 10px;
+    outline: none;
+}
+
+.lupa{
+    position: absolute;
+    border: none;
+    right: 5px;
+    width: 39px;
+    height: 39px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #f8b94e;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #f8b94e;
+    padding: 3% 8%;
+    margin: 4%;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #e7d29c;
+    text-align: center;
+    font-size: medium;
+    font-family: system-ui;
+    font-weight: bold;
+    padding: 14px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    left: 0
+}

@@ -1,0 +1,51 @@
+.recont{
+    background-color: #f4eadc;
+    border-radius: 18px;
+    width: 22%;
+    text-align: center;
+    padding: 2% 1%;
+    margin-top: 150px;
+    min-width: 350px;
+    font-family: system-ui;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width: 80%;
+}
+
+.input-form{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 16px;
+    border-color: white;
+    padding: 5% 10%;
+    width: 100%;
+}
+
+.pw-box{
+    position: relative;
+    max-width: 440px;
+}
+
+.ojo{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -12px;
+    width: 25px; 
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+}
