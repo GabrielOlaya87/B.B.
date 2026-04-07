@@ -2,6 +2,13 @@
     border-color: #ff9700;
 }
 
+.ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
 .btn-categoria{
     background-color: #f8b94e;
+    width: 100%;
 }
