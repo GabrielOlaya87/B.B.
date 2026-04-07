@@ -29,9 +29,20 @@ nav a {
     font-weight: bold;
 }
 
-.logo, .right-buttons {
-    min-width: 150px;
+.selected-text{
+    color: #ff9700;
 }
+
+.selected-btn{
+    background-color: #f8b94e;
+}
+
+.logo, .right-buttons {
+    min-width: 104px;
+    padding-right: 46px;
+    justify-content: end;
+}
+
 .logo {
     padding: 8px;
 }
@@ -39,6 +50,7 @@ nav a {
 .right-buttons {
     display: flex;
 }
+
 .right-buttons button {
     background: transparent;
     border: none;
@@ -83,6 +95,16 @@ nav a {
     height: 39px;
     background: transparent;
     cursor: pointer;
+}
+
+.carrito{
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    margin: -50px;
+    left: 770px;
 }
 
 .btn{
