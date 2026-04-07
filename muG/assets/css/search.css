@@ -6,6 +6,7 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
+    margin: 30px;
 }
 
 .btn-categoria{
