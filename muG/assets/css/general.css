@@ -1,3 +1,20 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  /* font-variation-settings:
+    "wdth" 100; */
+}
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
+
 body {
     display: flex;
     align-items: center;
@@ -6,7 +23,7 @@ body {
     width: 100%;
     min-width: 1024px;
 }
-.nav{
+.G-nav{
     background-color: #e7d29c;
     align-items: center;
     display: flex;
@@ -18,76 +35,86 @@ body {
     z-index: 1;
 }
 
-nav a {
+.G-nav a {
     color: black;
     width: 100%;
     flex: 1;
     text-align: center;
-    font-family: system-ui;
     font-size: 22px;
     /* margin-left: 55px; */
     font-weight: bold;
 }
 
-.selected-text{
+.G-selected-text{
     color: #ff9700;
 }
 
-.selected-btn{
-    background-color: #f8b94e;
+.G-selected-btn{
+    background-color: #f8b94e !important;
 }
 
-.logo, .right-buttons {
+.G-logo, .G-right-buttons {
     min-width: 104px;
     padding-right: 46px;
     justify-content: end;
 }
-
-.logo {
-    padding: 8px;
+.G-logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
 }
 
-.right-buttons {
+.G-right-buttons {
     display: flex;
 }
 
-.right-buttons button {
+.G-right-buttons button {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 6px;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.center {
+.G-right-buttons button span {
+    font-size: 42px;
+    color: black;
+}
+
+.G-center {
  width: 100%;
  display: flex;
 }
 
-.nav-buttons {
+.G-nav-buttons {
     display: flex;
     width: 100%;
     padding: 0 5%;
 }
 
-.cont-buscador{
+.G-cont-buscador{
     display: flex;
     align-items: center;
     min-width: 50%;
 }
 
-.buscador {
+.G-buscador {
     position: relative;
     width: 80%;
 }
 
-#buscador-input{
+#G-buscador-input{
     width: 100%;
     border-radius: 18px;
     padding: 10px 39px 10px 10px;
     outline: none;
 }
 
-.lupa{
+.G-lupa{
     position: absolute;
     border: none;
     right: 5px;
@@ -97,23 +124,70 @@ nav a {
     cursor: pointer;
 }
 
-.carrito{
+.G-menu-container {
+    position: relative; 
+    display: inline-block;
+}
+
+#G-menu-list {
+    position: absolute;
+    top: 66px;
+    right: 8px;
+    padding: 10px 8px;
+    border-radius: 12px;
+    background-color: #f2efef;
+    border: 1px solid black;
+    z-index: 1000;
+    min-width: 138px;
+}
+
+#G-menu-list a {
     position: relative;
+    right: 6px;
+    display: block;
+    margin: 4px;
+    padding: 2px;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    background: white;
+}
+
+#G-menu-list a:hover {
+    background-color: #f1f1f1;
+}
+
+.G-carrito{
+    position: absolute;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 6px;
-    margin: -50px;
-    left: 770px;
+    right: 15px;
+    bottom: 64px;
+    padding: 0;
+    display: flex;
 }
 
-.btn{
+.G-carrito span {
+    font-size: 40px;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.G-btn{
     background-color: #f8b94e;
     text-align: center;
     border-radius: 20px;
-    border-color: #f8b94e;
-    padding: 3% 8%;
-    margin: 4%;
+    border: 1px solid #f8b94e;
+    padding: 0 28px;
+    height: 42px;
+    /* margin: 4%; */
     font-size: medium;
     font-weight: bold;
     cursor: pointer;
@@ -123,7 +197,6 @@ footer{
     background-color: #e7d29c;
     text-align: center;
     font-size: medium;
-    font-family: system-ui;
     font-weight: bold;
     padding: 14px;
     width: 100%;

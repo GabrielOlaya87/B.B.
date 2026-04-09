@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página oficial de Bog-Boost">
-    <title>Bog-Boost</title>
+    <title>Bog-Boost - Recoveriy Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" rel="stylesheet" />
     <link href="../muG/assets/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="../muG/assets/css/reco-pass.css" rel="stylesheet" type="text/css"/>
-    <script src="../muG/assets/javascript/reco-pass.js" defer></script>
+    <script src="../muG/assets/javascript/general.js" defer></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo">
+    <nav class="G-nav">
+        <div class="G-logo">
             <img src="../muG/assets/images/logo.png" alt="logo" width="105px" height="60px">
         </div>
-        <div class="center">
-            <div class="nav-buttons">
+        <div class="G-center">
+            <div class="G-nav-buttons">
                 <a href="">Inicio</a>
             </div>
         </div>
-        <div class="right-buttons">
-            <button class="menu">
-                <img src="../muG/assets/images/menu.png" alt="menu" width="35px" height="30px">
+        <div class="G-right-buttons">
+            <button class="G-menu">
+                <span class="material-symbols-outlined">menu</span>
             </button>
         </div>
     </nav>
-    <section class="recont">
-        <h1>Recuperación de contraseña</h1>
-        <form method="..." action="...">
-            <div>
-                <label for="correo"></label>
-                <input class="input-form" id="correo" type="email" name="Correo" placeholder="Correo" required/><br>
-            </div>
-            <div>
-                <label for="code"></label>
-                <input class="input-form" id="code" type="text" name="Código-verificación" placeholder="Código de verificación" required/><br>
-            </div>
-            <div class="pw-box">
-                <label for="new"></label>
-                <input class="input-form new-pw" id="new" type="password" name="nueva-contraseña" placeholder="Nueva contraseña" required/>
-                <img src="../muG/assets/images/ojo.png" id="ojO" alt="ojo-pw" class="ojo">
-            </div>
-            <button type="submit" class="btn">Confirmar</button>
-        </form>
-    </section>
+    <main>
+        <section class="G-recont">
+            <h1>Recuperación de contraseña</h1>
+            <form method="..." action="...">
+                <div>
+                    <label for="correo"></label>
+                    <input class="G-input-form" id="correo" type="email" name="Correo" placeholder="Correo" required/><br>
+                </div>
+                <div>
+                    <label for="code"></label>
+                    <input class="G-input-form" id="code" type="text" name="Código-verificación" placeholder="Código de verificación" required/><br>
+                </div>
+                <div class="G-pw-box">
+                    <label for="G-new"></label>
+                    <input class="G-input-form new-pw" id="G-new" type="password" name="nueva-contraseña" placeholder="Nueva contraseña" required/>
+                    <!-- <img src="../muG/assets/images/ojo.png" alt="ojo-pw" class=""> -->
+                    <span id="G-ojO" class="material-symbols-outlined G-ojo">visibility</span>
+                </div>
+                <button type="submit" class="G-btn">Confirmar</button>
+            </form>
+        </section>
+    </main>
     <footer>Derechos de autor &copy; 2025 BOG-BOOST. Todos los derechos reservados.</footer>
 </body>
 </html>

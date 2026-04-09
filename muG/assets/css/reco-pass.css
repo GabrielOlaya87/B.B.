@@ -1,45 +1,54 @@
-.recont{
+.G-recont{
     background-color: #f4eadc;
     border-radius: 18px;
-    width: 22%;
+    width: 100%;
     text-align: center;
-    padding: 2% 1%;
     margin-top: 150px;
     min-width: 350px;
-    font-family: system-ui;
+    padding: 10px 0;
+    
 }
 
-form {
+.G-recont h1 {
+    width: 350px;
+}
+
+.G-recont form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-form div {
+.G-recont form > * {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1%;
+    margin-bottom: 20px;
     width: 80%;
 }
 
-.input-form{
+.G-recont form button {
+    width: auto;
+    margin-top: 10px;
+}
+
+.G-input-form{
     text-align: center;
     font-size: 14px;
     font-weight: bold;
     border-radius: 16px;
     border-color: white;
-    padding: 5% 10%;
+    padding: 16px;
     width: 100%;
 }
 
-.pw-box{
+.G-pw-box{
     position: relative;
     max-width: 440px;
 }
 
-.ojo{
+.G-ojo{
     position: absolute;
     right: 10px;
     top: 50%;

@@ -1,14 +1,75 @@
-#buscador-input{
-    border-color: #ff9700;
+#G-buscador-input{
+    border: 2px solid #ff9700;
 }
 
-.ul{
+.G-btn-filtro{
+    width: 100%;
+}
+
+.G-btn-filtro ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    margin: 30px;
+    margin: 30px 0;
+    padding: 0;
 }
 
-.btn-categoria{
+.G-btn-filtro ul li {
+    min-width: 170px;
+    position: relative;
+}
+.G-btn-filtro ul li:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 17px;
+    height: 100%;
+    background: white;
+    content: '';
+    z-index: 0;
+}
+.G-btn-filtro ul button {
+    background: #b4b4b4;
+    
+    padding: 10px;
+    border: none;
+    position: relative;
     width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.G-btn-filtro ul button:hover {
+    background: #c4c4c4;
+}
+
+.G-btn-filtro ul button:before,
+.G-btn-filtro ul button:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 0;
+    z-index: 1;
+}
+.G-btn-filtro ul button:before {
+    left: 0;
+    border-top: 18px solid transparent;
+    border-left: 17px solid white;
+    border-bottom: 17px solid transparent;
+}
+
+.G-btn-filtro ul button:after {
+    right: 0;
+    top: 0;
+    border-top: 18px solid transparent;
+    border-left: 17px solid #b4b4b4;
+    border-bottom: 19px solid transparent;
+}
+.G-btn-filtro ul button:hover:after {
+    border-left: 17px solid #c4c4c4;
+}
+
+.G-btn-filtro ul button.G-selected-btn::after {
+    border-left: 17px solid #f8b94e;
 }
