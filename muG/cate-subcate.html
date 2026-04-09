@@ -10,8 +10,8 @@
     <link href="../muG/assets/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="../muG/assets/css/products.css" rel="stylesheet" type="text/css"/>
     <link href="../muG/assets/css/cate-subcate.css" rel="stylesheet" type="text/css"/>
-    <!-- <link rel="icon" type="image/png" href="../muG/assets/images/B.B-Isotipofav.ico"/>
-    <script src="../muG/assets/javascript/index.js" defer></script> -->
+    <!-- <link rel="icon" type="image/png" href="../muG/assets/images/B.B-Isotipofav.ico"/> -->
+    <script src="../muG/assets/javascript/general.js" defer></script>
 </head>
 <body>
     <nav class="G-nav">
@@ -37,50 +37,59 @@
             <button class="G-bell">
                 <span class="material-symbols-outlined">circle_notifications</span>
             </button>
-            <button class="G-menu">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="G-menu-container">
+                <button id="G-menu-btn" type="button" onclick="toggleMenu()">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="G-menu-list">
+                    <a href="#">Perfil</a>
+                    <a href="#">Carrito</a>
+                    <a href="#">Historial</a>
+                    <a href="#">Contactenos</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
     <main>
         <div class="G-cat">
-            <h1>Categrías y Sub-categorías</h1>
+            <h1>Categorías y Sub-categorías</h1>
         </div>
         <section class="G-default">
             <section class="G-products">
                 <h2>Categoría: Accesorios</h2>
                 <div class="G-contenedor">
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Aretes</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod1.png" alt="producto1" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Aretes</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Collares</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod2.png" alt="producto2" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Collares</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Pulseras</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod3.png" alt="producto3" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Pulseras</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Anillos</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod4.png" alt="producto4" width="215px" height="220px"> -->
-                        </div>
-                        <div class="G-info">
-                            <p>Anillos</p>
                         </div>
                     </article>
                     <button class="G-flecha">
@@ -91,36 +100,36 @@
             <section class="G-products">
                 <h2>Categoría: Ropa</h2>
                 <div class="G-contenedor">
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Camisas</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod5.png" alt="producto5" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Camisas</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Pantalones</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod6.png" alt="producto6" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Pantalones</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Faldas</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod7.png" alt="producto7" width="215px" height="220px"> -->
                         </div>
-                        <div class="G-info">
-                            <p>Faldas</p>
-                        </div>
                     </article>
-                    <article>
+                    <article class="G-Pcard">
+                        <a href="" class="G-info">
+                            <p>Mascotas</p>
+                        </a>
                         <div>
                             <!-- <img src="../muG/assets/images/prod8.png" alt="producto8" width="215px" height="220px"> -->
-                        </div>
-                        <div class="info">
-                            <p>Mascotas</p>
                         </div>
                     </article>
                     <button class="G-flecha">

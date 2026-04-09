@@ -41,12 +41,14 @@ main {
 }
 
 .G-products .G-info{
-    
     font-weight: bold;
+    text-decoration: none;
+    margin: 8px;
+    color: black;
 }
 
 .G-products .G-info p{
-    margin: -1%;
+    margin: 6px;
 }
 
 .G-flecha{

@@ -12,6 +12,7 @@
     <link href="../muG/assets/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="../muG/assets/css/products.css" rel="stylesheet" type="text/css"/>
     <link href="../muG/assets/css/search.css" rel="stylesheet" type="text/css"/>
+    <script src="../muG/assets/javascript/general.js" defer></script>
 </head>
 <body>
     <nav class="G-nav">
@@ -37,9 +38,18 @@
             <button class="G-bell">
                 <span class="material-symbols-outlined">circle_notifications</span>
             </button>
-            <button class="G-menu">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="G-menu-container">
+                <button id="G-menu-btn" type="button" onclick="toggleMenu()">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div id="G-menu-list">
+                    <a href="#">Perfil</a>
+                    <a href="#">Carrito</a>
+                    <a href="#">Historial</a>
+                    <a href="#">Contactenos</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </div>
         </div>
     </nav>
     <main>

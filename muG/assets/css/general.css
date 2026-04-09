@@ -130,6 +130,7 @@ body {
 }
 
 #G-menu-list {
+    display: none;
     position: absolute;
     top: 66px;
     right: 8px;
