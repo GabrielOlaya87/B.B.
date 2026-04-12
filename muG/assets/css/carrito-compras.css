@@ -1,70 +1,68 @@
-main {
-    margin: 90px 0 100px;
-    width: 1024px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.G-shop-cart{
+.G-carrito-compras{
     background-color: #f4eadc;
     border-radius: 18px;
     position: relative;
     width: 100%;
     text-align: center;
-    margin-top: 55px;
-    padding: 0 24px 24px;
+    padding: 0 22px 24px;
     min-width: 600px;
     max-width: 700px;
-    
     font-weight: bold;
 }
-.G-shop-cart .G-carrito{
+
+.G-carrito-compras .G-carrito{
+    position: absolute;
     bottom: -35px;
     right: -35px;
 }
 
-.G-shop-cart h1{
-    
+.G-carrito-compras h1{
     font-weight: bold;
-    margin: 18px;
+    margin: 16px;
 }
 
-.G-cart-item{
-    margin: 18px 0;
-    padding: 20px;
+.G-item-carrito{
+    margin: 6px 0;
+    padding: 16px;
     display: flex;
 }
 
-.G-cart-img-item{
+.G-item-img-carrito{
     border-radius: 100%;
     border: 2px solid black;
     width: 136px;
     height: 136px;
+    min-width: 136px;
+    min-height: 136px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.G-cart-info{
+.G-informacion-carrito{
     background-color: white;
     border: 1px solid black;
     margin-left: 36px;
-    padding: 0px 176px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    padding: 20px;
 }
 
-.G-cart-info p{
+.G-informacion-carrito div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.G-informacion-carrito p{
+    display: flex;
     text-align: justify;
-    position: relative;
-    margin: 6px;
-    right: 178px;
-}
-
-.G-cart-item button{
-    position: relative;
-    bottom: 6px;
-    left: 164px;
+    margin: 0;
 }
 
 .G-action-buttons {

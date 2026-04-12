@@ -1,54 +1,52 @@
-main {
-    margin: 80px 0 100px;
-    width: 1024px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .G-default {
     width: 100%;
 }
 
-.G-cat{
-    text-align: center;
-    
+.G-productos {
+    margin-top: 40px;
 }
 
-.G-products h2{
-    
-    left: 3%;
-    top: -12%;
+.G-productos:first-child {
+    margin: 0;
 }
 
-.G-products .G-contenedor {
+.G-productos h2{
+    margin: 0;
+    padding: 20px 0;
+}
+
+.G-productos .G-contenedor {
     width: 100%;
     display: flex;
     position: relative;
     justify-content: space-between;
-    margin-bottom: 56px;
-    margin-top: 12px;
+    /* margin-bottom: 56px;
+    margin-top: 12px; */
 }
 
-.G-products article{
+.G-productos article{
     border: 1px solid #000;
     flex-shrink: 0; 
     text-align: center;
 }
 
-.G-products article img{
+.G-productos article img{
     border-bottom: 1px solid #000;
 }
 
-.G-products .G-info{
+.G-productos .G-informacion{
     font-weight: bold;
     text-decoration: none;
     margin: 8px;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.G-products .G-info p{
-    margin: 6px;
+.G-productos .G-informacion p{
+    margin: 8px;
 }
 
 .G-flecha{

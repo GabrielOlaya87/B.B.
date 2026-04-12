@@ -1,0 +1,15 @@
+.G-card-producto {
+    border-radius: 24px;
+    background-color: #f4eadc;
+    width: 215px;
+    height: 180px;
+}
+
+.G-card-producto .G-informacion {
+    height: 100%;
+    margin: 0;
+}
+
+.G-productos article img{
+    border-bottom: 1px solid #f4eadc;
+}

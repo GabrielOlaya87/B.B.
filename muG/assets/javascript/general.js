@@ -21,12 +21,23 @@ function toggleMenu() {
     } else {
         menu.style.display = "block";
     }
+
+    const boton = document.getElementById('G-menu-btn');
+    boton.classList.toggle('active-icon'); 
 }
 
-// Opcional: Cerrar el menú si haces clic fuera de él
-window.onclick = function(event) {
-    if (!event.target.closest('#G-menu-btn')) {
-        const menu = document.getElementById("G-menu-list");
-        if (menu) menu.style.display = "none";
+//JS que cambia color del icono de menu
+
+//JS para contador
+function cambiar(cantidad) {
+    var display = document.getElementById('G-valor');
+    if (!display) return;
+
+    var actual = parseInt(display.innerText) || 0;
+    var nuevoValor = actual + cantidad;
+
+    if (nuevoValor >= 0) {
+        display.innerText = nuevoValor;
     }
 }
+

@@ -1,26 +1,25 @@
-.G-recont{
+.G-card-form{
     background-color: #f4eadc;
     border-radius: 18px;
     width: 100%;
     text-align: center;
-    margin-top: 150px;
-    min-width: 350px;
+    max-width: 350px;
     padding: 10px 0;
     
 }
 
-.G-recont h1 {
+.G-card-form h1 {
     width: 350px;
 }
 
-.G-recont form {
+.G-card-form form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.G-recont form > * {
+.G-card-form form > * {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +27,7 @@
     width: 80%;
 }
 
-.G-recont form button {
+.G-card-form form button {
     width: auto;
     margin-top: 10px;
 }
@@ -41,7 +40,7 @@
     border-color: white;
     padding: 16px;
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .G-pw-box{

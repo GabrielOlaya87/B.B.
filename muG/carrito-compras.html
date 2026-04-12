@@ -4,37 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página oficial de Bog-Boost">
-    <title>Bog-Boost - Shop Cart</title>
+    <title>Carrito de compras</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" rel="stylesheet" />
     <link href="../muG/assets/css/general.css" rel="stylesheet" type="text/css"/>
-    <link href="../muG/assets/css/shop-cart.css" rel="stylesheet" type="text/css"/>
+    <link href="../muG/assets/css/carrito-compras.css" rel="stylesheet" type="text/css"/>
     <script src="../muG/assets/javascript/general.js" defer></script>
 </head>
-<body>
+<body class="G-body">
     <nav class="G-nav">
         <div class="G-logo">
             <img src="../muG/assets/images/logo.png" alt="logo" width="105px" height="60px">
         </div>
-        <div class="G-center">
+        <div class="G-centro">
             <div class="G-nav-buttons">
                 <a href="">Inicio</a>
                 <a href="">Catálogo</a>
-                <a href="">Negocios</a>
+                <a href="../muG/negocios.html">Negocios</a>
             </div>
-            <div class="G-cont-buscador">
+            <div class="G-contenedor-buscador">
                 <div class="G-buscador">
                     <input id="G-buscador-input" type="search">
                     <button class="G-lupa">
-                        <img src="../muG/assets/images/lupa.svg" alt="lupa-buscador" height="16px">
+                        <span class="material-symbols-outlined">search</span>
                     </button>
                 </div>
             </div>
         </div>
         <div class="G-right-buttons">
-            <button class="G-bell">
+            <button class="G-campana">
                 <span class="material-symbols-outlined">circle_notifications</span>
             </button>
             <div class="G-menu-container">
@@ -42,59 +42,67 @@
                     <span class="material-symbols-outlined">menu</span>
                 </button>
                 <div id="G-menu-list">
-                    <a href="#">Perfil</a>
+                    <a href="../muG/perfil-usuario.html">Perfil</a>
                     <a href="#" class="G-selected-btn">Carrito</a>
-                    <a href="#">Historial</a>
+                    <a href="../muG/historial-compras.html">Historial</a>
                     <a href="#">Contactenos</a>
                     <a href="#">Cerrar sesión</a>
                 </div>
             </div>
         </div>
     </nav>
-    <main>
-        <section class="G-shop-cart">
+    <main class="G-main">
+        <section class="G-carrito-compras">
             <h1>Carrito de compras</h1>
-            <div class="G-cart-item">
-                <div class="G-cart-img-item">
+            <div class="G-item-carrito">
+                <div class="G-item-img-carrito">
                     <img src="../muG/assets/images/prod6.png" alt="producto6">
                 </div>
-                <div class="G-cart-info">
-                    <p>Nombre:</p>
-                    <p>Cantidad:</p>
-                    <p>$ Valor:</p>
+                <div class="G-informacion-carrito">
+                    <div>
+                        <p>Nombre:</p>
+                        <p>Cantidad:</p>
+                        <p>$ Valor:</p>
+                    </div>
                     <button class="G-btn">Eliminar</button>
                 </div>
             </div>
-            <div class="G-cart-item">
-                <div class="G-cart-img-item">
+            <div class="G-item-carrito">
+                <div class="G-item-img-carrito">
                     <img src="../muG/assets/images/prod15.png" alt="producto15">
                 </div>
-                <div class="G-cart-info">
-                    <p>Nombre:</p>
-                    <p>Cantidad:</p>
-                    <p>$ Valor:</p>
+                <div class="G-informacion-carrito">
+                    <div>
+                        <p>Nombre:</p>
+                        <p>Cantidad:</p>
+                        <p>$ Valor:</p>
+                    </div>
                     <button class="G-btn">Eliminar</button>
                 </div>
             </div>
-            <div class="G-cart-item">
-                <div class="G-cart-img-item">
+            <div class="G-item-carrito">
+                <div class="G-item-img-carrito">
                     <img src="../muG/assets/images/prod2.png" alt="producto2">
                 </div>
-                <div class="G-cart-info">
-                    <p>Nombre:</p>
-                    <p>Cantidad:</p>
-                    <p>$ Valor:</p>
+                <div class="G-informacion-carrito">
+                    <div>
+                        <p>Nombre:</p>
+                        <p>Cantidad:</p>
+                        <p>$ Valor:</p>
+                    </div>
                     <button class="G-btn">Eliminar</button>
                 </div>    
             </div>
-            <div class="G-cart-item">
-                <div class="G-cart-img-item">
+            <div class="G-item-carrito">
+                <div class="G-item-img-carrito">
                     <img src="../muG/assets/images/prod12.png" alt="producto12">
                 </div>
-                <div class="G-cart-info">
-                    <p>Nombre:</p>
-                    <p>Cantidad:</p>
-                    <p>$ Valor:</p>
+                <div class="G-informacion-carrito">
+                    <div>
+                        <p>Nombre:</p>
+                        <p>Cantidad:</p>
+                        <p>$ Valor:</p>
+                    </div>
                     <button class="G-btn">Eliminar</button>
                 </div>
             </div>
@@ -107,6 +115,6 @@
             </button>
         </section>
     </main>
-    <footer>Derechos de autor &copy; 2025 BOG-BOOST. Todos los derechos reservados.</footer>
+    <footer class="G-footer">Derechos de autor &copy; 2025 BOG-BOOST. Todos los derechos reservados.</footer>
 </body>
 </html>
